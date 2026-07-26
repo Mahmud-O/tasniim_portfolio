@@ -13,7 +13,7 @@ const Footer = () => {
 
       {/* Big Name watermark */}
       <div className="absolute bottom-0 left-0 w-full pointer-events-none select-none overflow-hidden">
-        <p className="text-[25vw] md:text-[22vw] font-black uppercase tracking-tighter leading-none text-black/[0.04] dark:text-white/[0.03] whitespace-nowrap translate-y-[20%] md:translate-y-[20%]">
+        <p className="text-[25vw] md:text-[22vw] font-black uppercase tracking-tighter leading-none text-black/4 dark:text-white/10 whitespace-nowrap translate-y-[10%] md:translate-y-[15%]">
           Tasneem
         </p>
       </div>

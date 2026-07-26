@@ -96,7 +96,7 @@ const ServiceSection = () => {
 
       {/* Big SERVICES Header */}
       <div className="w-full flex justify-end pr-4 md:pr-16 mb-12 md:mb-32 overflow-hidden pointer-events-none">
-        <h2 className="text-[14vw] md:text-[20vw] font-black uppercase leading-[0.75] tracking-tighter text-[#1a1a1a] dark:text-white/[0.03] select-none whitespace-nowrap">
+        <h2 className="text-[14vw] md:text-[20vw] font-black uppercase leading-[0.75] tracking-tighter text-[#1a1a1a] dark:text-white/10 select-none whitespace-nowrap">
           SERVICES
         </h2>
       </div>

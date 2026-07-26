@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import heroImg from '../assets/hero/hero.jpeg';
-import flowerImg2 from '../assets/Flower/image-2.png';
+import flowerImg2 from '../assets/Flower/image-2.jpg';
 import logoImg from '../assets/logo.png';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -135,40 +135,32 @@ const HeroSection = ({ preloaderDone }) => {
               <div className="absolute top-[8px] left-1/2 -translate-x-1/2 w-[50px] h-[12px] rounded-full bg-transparent border-2 border-white/60 shadow-[inset_0_2px_4px_rgba(0,0,0,0.1)] z-10" />
 
               {/* White paper card */}
-              <div className="bg-[#e8e8e8] dark:bg-[#1d1d1d] rounded-[5px] p-5 md:p-6 pt-8 md:pt-10 pb-5 md:pb-6 flex flex-col border border-gray-300 dark:border-zinc-800 shadow-[0_2px_8px_rgba(0,0,0,0.05)] mt-3 h-[360px] md:h-[420px] relative z-0 transition-colors duration-300">
+              <div className="bg-[#e8e8e8] dark:bg-[#1d1d1d] rounded-[8px] p-4 md:p-5 pt-6 md:pt-7 pb-4 md:pb-5 flex flex-col border border-gray-300 dark:border-zinc-800 shadow-[0_2px_8px_rgba(0,0,0,0.05)] mt-3 h-[370px] md:h-[420px] relative z-0 transition-colors duration-300">
 
-                {/* Top bold text */}
-                <div className="flex items-center justify-between mb-6">
-                  <div className="leading-[0.85] tracking-tighter text-[#111] dark:text-white font-black text-4xl">
-                    NEW<br />PORTFOLIO
-                  </div>
-                  <img src={logoImg} alt="TB Logo Emblem" className="w-10 h-10 rounded-xl object-contain dark:invert" />
-                </div>
-
-                {/* Center Photo */}
-                <div className="w-full flex justify-center mb-6 md:mb-8">
-                  <div className="w-[140px] md:w-[160px] h-[160px] md:h-[190px] bg-gray-200 overflow-hidden shadow-sm">
+                {/* Main Portrait Photo - Expanded to fill card space */}
+                <div className="w-full flex justify-center mb-4 md:mb-5">
+                  <div className="w-[165px] md:w-[195px] h-[210px] md:h-[250px] rounded-lg bg-gray-200 overflow-hidden shadow-sm border border-black/10 dark:border-white/10 shrink-0">
                     <img
                       src={heroImg}
                       alt="Portrait"
-                      className="w-full h-full object-cover object-center grayscale  contrast-125"
+                      className="w-full h-full object-cover  object-top grayscale  contrast-125 hover:scale-105 transition-transform duration-500"
                     />
                   </div>
                 </div>
 
                 {/* Details (Handwritten style) */}
-                <div className="flex flex-col gap-5 mt-auto">
-                  <div className="flex items-end font-bold text-[11px] relative">
-                    <span className="mr-2 tracking-wide uppercase text-black dark:text-zinc-400">NAME</span>
+                <div className="flex flex-col gap-4 md:gap-5 mt-auto pb-1">
+                  <div className="flex items-end font-bold relative">
+                    <span className="mr-2 tracking-wide text-[10px] md:text-[11px] uppercase text-black dark:text-zinc-400 shrink-0">NAME</span>
                     <div className="flex-1 border-b-2 border-dotted border-black dark:border-zinc-500 mb-[2px]" />
-                    <span className="absolute left-[50px] -bottom-2 font-cursive text-[28px] leading-none text-black dark:text-white whitespace-nowrap z-10">
+                    <span className="absolute left-[45px] md:left-[50px] -bottom-1 font-cursive text-[22px] md:text-[26px] leading-none text-black dark:text-white whitespace-nowrap z-10">
                       Tasneem
                     </span>
                   </div>
-                  <div className="flex items-end font-bold text-[11px] relative">
-                    <span className="mr-2 tracking-wide uppercase text-black dark:text-zinc-400">ROLE</span>
+                  <div className="flex items-end font-bold relative">
+                    <span className="mr-2 tracking-wide text-[10px] md:text-[11px] uppercase text-black dark:text-zinc-400 shrink-0">ROLE</span>
                     <div className="flex-1 border-b-2 border-dotted border-black dark:border-zinc-500 mb-[2px]" />
-                    <span className="absolute left-[50px] -bottom-2 font-cursive text-[28px] leading-none text-black dark:text-white whitespace-nowrap z-10">
+                    <span className="absolute left-[45px] md:left-[50px] -bottom-1 font-cursive text-[20px] md:text-[24px] leading-none text-black dark:text-white whitespace-nowrap z-10">
                       Full-Stack Developer
                     </span>
                   </div>
@@ -188,18 +180,18 @@ const HeroSection = ({ preloaderDone }) => {
       </div>
 
       {/* Left side info */}
-      <div className="hero-text-anim absolute left-6 md:left-12 bottom-16 md:bottom-10 z-20 flex flex-col gap-2">
-        <p className="text-[12px] md:text-[10px] font-bold uppercase tracking-[0.25em] text-gray-400 dark:text-zinc-500">Full-Stack Developer</p>
-        <p className="text-[12px] md:text-[10px] font-bold uppercase tracking-[0.25em] text-gray-400 dark:text-zinc-500">React · Node · .NET</p>
-        <div className="flex items-center gap-2 mt-1">
-          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-          <span className="text-[12px] md:text-[10px] font-bold uppercase tracking-widest text-gray-400">Available</span>
+      <div className="hero-text-anim absolute left-4 sm:left-6 md:left-12 bottom-12 sm:bottom-14 md:bottom-10 z-20 flex flex-col gap-1 sm:gap-2 max-w-[50vw] sm:max-w-none">
+        <p className="text-[9px] sm:text-[10px] md:text-[11px] font-bold uppercase tracking-wider sm:tracking-[0.2em] text-gray-500 dark:text-zinc-400">Full-Stack Developer</p>
+        <p className="text-[9px] sm:text-[10px] md:text-[11px] font-bold uppercase tracking-wider sm:tracking-[0.2em] text-gray-500 dark:text-zinc-400">React · Node · .NET</p>
+        <div className="flex items-center gap-1.5 mt-0.5">
+          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse shrink-0" />
+          <span className="text-[9px] sm:text-[10px] md:text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-zinc-400">Available</span>
         </div>
       </div>
 
-      {/* Right scroll hint */}
-      <div className="hero-text-anim absolute right-6 md:right-12 bottom-16 md:bottom-10 z-20 flex flex-col items-end gap-2">
-        <p className="text-[12px] md:text-[10px] font-bold uppercase tracking-[0.25em] text-gray-400">Scroll to explore</p>
+      {/* Right scroll hint - Hidden on small mobile screens to prevent text overlap */}
+      <div className="hero-text-anim absolute right-4 sm:right-6 md:right-12 bottom-12 sm:bottom-14 md:bottom-10 z-20 hidden sm:flex flex-col items-end gap-2">
+        <p className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">Scroll to explore</p>
         <div className="w-px h-10 bg-gradient-to-b from-black/20 to-transparent ml-auto mr-1" />
       </div>
 
