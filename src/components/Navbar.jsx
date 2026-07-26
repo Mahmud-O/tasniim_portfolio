@@ -47,7 +47,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 text-xl font-black tracking-tighter uppercase text-[#1a1a1a] dark:text-white z-[101] group">
-            <img src={logoImg} alt="TB Monogram Logo" className="w-8 h-8 rounded-lg object-contain dark:invert group-hover:scale-105 transition-transform duration-300" />
+            <img src={logoImg} alt="TB Monogram Logo" className="w-10 h-10 rounded-lg object-contain dark:invert group-hover:scale-105 transition-transform duration-300" />
             <span>Tasneem<span className="text-[#f03e3e]">.</span></span>
           </a>
 
