@@ -3,13 +3,11 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { useTheme } from '../context/ThemeContext';
-// import designImg1 from '../assets/service/left.png';
-// import designImg2 from '../assets/service/right.png';
-// import designImg3 from '../assets/about/about.png';
 
 import project1Img from '../assets/project/mailStock.png';
 import project2Img from '../assets/project/newsapp.png';
 import project3Img from '../assets/project/studentbazar.png';
+import project4Img from '../assets/project/project-18.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,13 +25,24 @@ const projects = [
     LiveDemo:"https://milstock-b4yo.vercel.app/"
   },
   {
+    id: '04',
+    title: 'XSPEED — Express Logistics',
+    category: 'Express Logistics',
+    description: 'The fastest regional and international express logistics in Egypt and MENA. Real-time telemetry tracking, competitive freight rates, and 220+ global trade corridors.',
+    tags: ['Next.js', 'Node.js', 'Clean Architecture', 'REST APIs', 'JWT'],
+    year: '2026',
+    color: '#7c3aed',
+    img: project4Img,
+    LiveDemo: 'https://exspeeds.com'
+  },
+  {
     id: '02',
     title: 'News App Platform',
     category: 'News',
     description: 'A responsive news app that delivers the latest headlines across multiple categories, with real-time article updates, searchable content, and a clean reading experience built for fast browsing.',
     tags: ['React.js', 'Node.js', 'Clean Architecture', 'REST APIs', 'JWT'],
     year: '2026',
-    color: '#7c3aed',
+    color: '#f03e3e',
     img: project2Img,
     githubLink: 'https://github.com/Tasneem60',
   },
@@ -47,7 +56,7 @@ const projects = [
     color: '#7c3aed',
     img: project3Img,
     githubLink: 'https://github.com/Tasneem60',
-  },
+  }
   
 ];
 
